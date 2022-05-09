@@ -15,8 +15,13 @@ test("Page PlayWRight Test", async ({ page }) => {
   await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
 });
 
-test.only("Verified title of page", async ({ page }) => {
+test("Verified title of page", async ({ page }) => {
   await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
   console.log(await page.title());
   await expect(page).toHaveTitle("LoginPage Practise | Rahul Shetty Academy");
+});
+
+test.only("Login Page Automation", async ({ page }) => {
+  await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
+  page.locator;
 });
